@@ -1,0 +1,15 @@
+{
+  "name": "unit-test-plugin",
+  "owner": { "name": "chhao0609" },
+  "metadata": {
+    "description": "後端 Unit Test 自動化流水線 plugin 的 marketplace"
+  },
+  "plugins": [
+    {
+      "name": "unit-test-plugin",
+      "source": "./plugins/unit-test-plugin",
+      "description": "後端 Unit Test 自動化流水線（TS track）：掃描 → 情境設計 → 產測試碼 → 跑測 → 失敗分析（+ --canonical 權威 run 機械計數與 drift 偵測；incremental 另有 --fast 建議模式——機器報告、開發者決定重生），framework × test-runner 兩軸 aware（koa-inversify / koa-plain / gama-api-server / NestJS × jest/mocha）。測試碼一律 co-located `.spec.ts`、流程中繼收於 gitignored `.ut-cache/`。內含 mutation-resistant 規則正本（25 規則類）。",
+      "version": "1.7.0-rc7"
+    }
+  ]
+}
